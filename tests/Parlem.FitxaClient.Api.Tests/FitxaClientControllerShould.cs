@@ -1,6 +1,6 @@
 namespace Parlem.FitxaClient.Api.Tests
 {
-    public class UnitTest1
+    public class FitxaClientControllerShould
     {
         [Fact]
         public void Test1()
