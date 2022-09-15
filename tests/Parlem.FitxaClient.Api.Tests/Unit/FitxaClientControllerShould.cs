@@ -1,4 +1,4 @@
-namespace Parlem.FitxaClient.Api.Tests
+namespace Parlem.FitxaClient.Api.Tests.Unit
 {
     using Application.Models;
     using Microsoft.AspNetCore.Mvc;

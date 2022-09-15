@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Parlem.FitxaClient.Domain\Parlem.FitxaClient.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
