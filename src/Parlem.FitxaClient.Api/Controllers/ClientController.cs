@@ -4,16 +4,16 @@ namespace Parlem.FitxaClient.Api
     using Microsoft.AspNetCore.Mvc;
     using System.Net;
 
-    [Route("api/[controller]/[action]")]
-    public class FitxaClientController : ControllerBase
+    [Route("api/[controller]")]
+    [ApiController]
+    public class ClientController : ControllerBase
     {
-        public FitxaClientController()
+        public ClientController()
         {
-
         }
 
-        [Route("client/{clientId}")]
-        [HttpGet(Name = "GetFitxaClient")]
+        [HttpGet]
+        [Route("{id:int}/details")]
         [ProducesResponseType((int)HttpStatusCode.OK)]
         public ActionResult<ClientDto> Get(long clientId)
         {

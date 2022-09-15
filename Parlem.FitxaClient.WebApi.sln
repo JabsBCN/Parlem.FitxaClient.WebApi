@@ -21,9 +21,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Parlem.FitxaClient.Infrastr
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{A89AF325-B2C0-481B-A5A8-E2C7A6DD13D8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Parlem.FitxaClient.Api.Tests", "tests\Parlem.FitxaClient.Api.Tests\Parlem.FitxaClient.Api.Tests.csproj", "{F0985890-2954-430A-8C32-D1AE45D1D994}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Parlem.FitxaClient.Api.Tests", "tests\Parlem.FitxaClient.Api.Tests\Parlem.FitxaClient.Api.Tests.csproj", "{F0985890-2954-430A-8C32-D1AE45D1D994}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Parlem.FitxaClient.Application.Tests", "tests\Parlem.FitxaClient.Application.Tests\Parlem.FitxaClient.Application.Tests.csproj", "{BC5F34E4-6D5A-408D-9AF3-3C1AC8D0BC27}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Parlem.FitxaClient.Application.Tests", "tests\Parlem.FitxaClient.Application.Tests\Parlem.FitxaClient.Application.Tests.csproj", "{BC5F34E4-6D5A-408D-9AF3-3C1AC8D0BC27}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

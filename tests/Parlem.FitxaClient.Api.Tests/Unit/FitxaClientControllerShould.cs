@@ -12,7 +12,7 @@ namespace Parlem.FitxaClient.Api.Tests.Unit
         public void RetrieveOK()
         {
             //Arrange
-            var fitxaClientController = new FitxaClientController();
+            var fitxaClientController = new ClientController();
 
             //Act
             var result = fitxaClientController.Get(CLIENT_ID);
@@ -26,7 +26,7 @@ namespace Parlem.FitxaClient.Api.Tests.Unit
         public void RetrieveFitxaClient()
         {
             //Arrange
-            var fitxaClientController = new FitxaClientController();
+            var fitxaClientController = new ClientController();
 
             var expectedFitxaClient = new
             {
