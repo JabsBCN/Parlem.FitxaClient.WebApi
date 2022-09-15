@@ -1,7 +1,6 @@
 namespace Parlem.FitxaClient.Api
 {
     using Microsoft.AspNetCore.Mvc;
-    using System;
 
     public class FitxaClientController : ControllerBase
     {
@@ -10,9 +9,9 @@ namespace Parlem.FitxaClient.Api
 
         }
 
-        public object Get(object clientId)
+        public ActionResult Get(long clientId)
         {
-            throw new NotImplementedException();
+            return Ok();
         }
     }
 }
