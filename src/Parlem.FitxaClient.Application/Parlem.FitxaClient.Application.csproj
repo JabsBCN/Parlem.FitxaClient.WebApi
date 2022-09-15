@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Parlem.FitxaClient.Domain\Parlem.FitxaClient.Domain.csproj" />
+    <ProjectReference Include="..\Parlem.FitxaClient.Infrastructure\Parlem.FitxaClient.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
