@@ -1,5 +1,6 @@
 namespace Parlem.FitxaClient.Api
 {
+    using Application.Models;
     using Microsoft.AspNetCore.Mvc;
 
     public class FitxaClientController : ControllerBase
@@ -9,9 +10,9 @@ namespace Parlem.FitxaClient.Api
 
         }
 
-        public ActionResult Get(long clientId)
+        public ActionResult<ClientDto> Get(long clientId)
         {
-            return Ok();
+            return Ok(new ClientDto(555555, "nif", "11223344E", "it@parlem.com", 11111, "Enriqueta", "Parlem", 668668668));
         }
     }
 }
