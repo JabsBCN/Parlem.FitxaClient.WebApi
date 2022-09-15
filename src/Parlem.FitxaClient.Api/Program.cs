@@ -1,8 +1,15 @@
+using Parlem.FitxaClient.Application.Contracts;
+using Parlem.FitxaClient.Application.Implementations;
+using Parlem.FitxaClient.Domain.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddScoped<IGetClientDetails, GetClientDetails>();
+builder.Services.AddScoped<IClientService, ClientService>();
 
 var app = builder.Build();
 

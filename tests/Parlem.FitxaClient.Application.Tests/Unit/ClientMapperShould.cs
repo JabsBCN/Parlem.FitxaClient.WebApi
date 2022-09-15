@@ -14,7 +14,7 @@ namespace Parlem.FitxaClient.Application.Tests.Integration
             //Arrange
             var clientMapper = new ClientMapper();
             var clientservice = Substitute.For<ClientService>();
-            var client = clientservice.CreateClient(555555, "nif", "11223344E", "it@parlem.com", 11111, "Enriqueta", "Parlem", 668668668);
+            var client = clientservice.Create(555555, "nif", "11223344E", "it@parlem.com", 11111, "Enriqueta", "Parlem", 668668668);
             var expectedClientDto = new ClientDto(555555, "nif", "11223344E", "it@parlem.com", 11111, "Enriqueta", "Parlem", 668668668);
 
             //Action
