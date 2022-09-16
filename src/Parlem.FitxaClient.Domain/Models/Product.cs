@@ -27,7 +27,7 @@ namespace Parlem.FitxaClient.Domain.Models
         {
         }
 
-        internal Product(long id, string productName, string docNum, string numeracioTerminal, DateTime soldAt, long customerId)
+        internal Product(long id, string productName, string docNum, long numeracioTerminal, DateTime soldAt, long customerId)
         {
             Id = id;
             ProductName = productName;

@@ -5,6 +5,6 @@ namespace Parlem.FitxaClient.Application.Mappers
 {
     public interface IProductMapper
     {
-        ProductDto MapFrom(Product customer);
+        IEnumerable<ProductDto> MapFrom(IEnumerable<Product> customer);
     }
 }

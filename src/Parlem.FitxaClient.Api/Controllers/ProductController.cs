@@ -22,13 +22,13 @@ namespace Parlem.FitxaClient.Api
         [ProducesResponseType((int)HttpStatusCode.NotFound)]
         public ActionResult<IEnumerable<ProductDto>> Get(long customerId)
         {
-            var customer = getCustomerProducts.GetByCustomerId(customerId);
+            var products = getCustomerProducts.GetByCustomerId(customerId);
 
-            if (customer == null)
+            if (products == null)
             {
                 return base.NotFound();
             }
-            return base.Ok(customer);
+            return base.Ok(products);
         }
     }
 }

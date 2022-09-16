@@ -4,6 +4,6 @@ namespace Parlem.FitxaClient.Infrastructure.Contracts
 {
     public  interface IProductRepository
     {
-        Product GetCustomerProductsByCustomerId(long customerId);
+        IEnumerable<Product> GetCustomerProductsByCustomerId(long customerId);
     }
 }

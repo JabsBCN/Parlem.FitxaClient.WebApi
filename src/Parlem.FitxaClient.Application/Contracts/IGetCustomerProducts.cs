@@ -4,6 +4,6 @@ namespace Parlem.FitxaClient.Application.Contracts
 {
     public interface IGetCustomerProducts
     {
-        IEnumerable<ProductDto> GetByCustomerId(long customerId);
+        IEnumerable<ProductDto>? GetByCustomerId(long customerId);
     }
 }
