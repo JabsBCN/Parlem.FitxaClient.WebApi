@@ -12,7 +12,7 @@ S'han creat dos controllers, separats per Client i Producte, cadascú amb una cr
 GET
 ​/api​/Customer​/{customerId}​/details
 
-### Product
+#### Product
 GET
 ​/api​/Product​/{customerId}​/products
 
