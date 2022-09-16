@@ -10,4 +10,10 @@
     <ProjectReference Include="..\Parlem.FitxaClient.Domain\Parlem.FitxaClient.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="Data\clients.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
