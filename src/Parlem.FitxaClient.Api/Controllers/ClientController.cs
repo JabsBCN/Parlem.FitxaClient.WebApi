@@ -9,26 +9,26 @@ namespace Parlem.FitxaClient.Api
     [ApiController]
     public class ClientController : ControllerBase
     {
-        private readonly IGetClientDetails getClientDetails;
+        private readonly IGetClientDetails getCustomerDetails;
 
         public ClientController(IGetClientDetails getClientDetails)
         {
-            this.getClientDetails = getClientDetails;
+            this.getCustomerDetails = getClientDetails;
         }
 
         [HttpGet]
-        [Route("{clientId:long}/details")]
+        [Route("{customerId:long}/details")]
         [ProducesResponseType((int)HttpStatusCode.OK)]
         [ProducesResponseType((int)HttpStatusCode.NotFound)]
-        public ActionResult<ClientDto> Get(long clientId)
+        public ActionResult<ClientDto> Get(long customerId)
         {
-            var client = getClientDetails.GetById(clientId);
+            var customer = getCustomerDetails.GetById(customerId);
 
-            if (client == null)
+            if (customer == null)
             {
                 return base.NotFound();
             }
-            return base.Ok(client);
+            return base.Ok(customer);
         }
     }
 }

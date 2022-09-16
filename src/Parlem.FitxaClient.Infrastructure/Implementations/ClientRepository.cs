@@ -8,19 +8,19 @@ namespace Parlem.FitxaClient.Infrastructure.Implementations
     {
         public Client GetClientById(long id)
         {
-            var clients = ReadClientsFromStorage();
+            var clients = ReadCustomersFromStorage();
 
-            return clients.FirstOrDefault<Client>(client => client.CustomerId == id);
+            return clients.FirstOrDefault<Client>(customer => customer.CustomerId == id);
 
         }
             
-        private IEnumerable<Client> ReadClientsFromStorage()
+        private IEnumerable<Client> ReadCustomersFromStorage()
         {
-            var clientsJsonContent = File.ReadAllText("../Parlem.FitxaClient.Infrastructure/Data/clients.json");
+            var customersJsonContent = File.ReadAllText("../Parlem.FitxaClient.Infrastructure/Data/clients.json");
 
-            if (string.IsNullOrEmpty(clientsJsonContent)) return new List<Client>();
+            if (string.IsNullOrEmpty(customersJsonContent)) return new List<Client>();
 
-            return JsonConvert.DeserializeObject<List<Client>>(clientsJsonContent);
+            return JsonConvert.DeserializeObject<List<Client>>(customersJsonContent);
 
         }
     }
