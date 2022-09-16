@@ -11,10 +11,17 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+//Use cases
 builder.Services.AddScoped<IGetCustomerDetails, GetCustomerDetails>();
+builder.Services.AddScoped<IGetCustomerProducts, GetCustomerProducts>();
+//Mappers
 builder.Services.AddScoped<ICustomerMapper, CustomerMapper>();
+builder.Services.AddScoped<IProductMapper, ProductMapper>();
+//Services
 builder.Services.AddScoped<ICustomerService, CustomerService>();
+//Repositories
 builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
+builder.Services.AddScoped<IProductRepository, ProductRepository>();
 
 var app = builder.Build();
 
