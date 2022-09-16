@@ -14,14 +14,14 @@ namespace Parlem.FitxaClient.Application.Tests.Integration
             //Arrange
             var clientMapper = new CustomerMapper();
             var customerService = Substitute.For<CustomerService>();
-            var client = customerService.Create(555555, "nif", "11223344E", "it@parlem.com", 11111, "Enriqueta", "Parlem", 668668668);
+            var customer = customerService.Create(555555, "nif", "11223344E", "it@parlem.com", 11111, "Enriqueta", "Parlem", 668668668);
             var expectedCustomerDto = new CustomerDto(555555, "nif", "11223344E", "it@parlem.com", 11111, "Enriqueta", "Parlem", 668668668);
 
             //Action
-            var clientDto = clientMapper.MapFrom(client);
+            var customerDto = clientMapper.MapFrom(customer);
 
             //Assert
-            clientDto.Should().BeEquivalentTo(expectedCustomerDto);
+            customerDto.Should().BeEquivalentTo(expectedCustomerDto);
         }
     }
 }
