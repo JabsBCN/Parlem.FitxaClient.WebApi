@@ -5,21 +5,21 @@ namespace Parlem.FitxaClient.Domain.Models
     public class Client
     {
         [JsonPropertyName("_id")]
-        public long Id { get; protected set; }
+        public long Id { get; set; }
         [JsonPropertyName("docType")]
-        public string DocType { get; protected set; }
+        public string DocType { get; set; }
         [JsonPropertyName("docNum")]
-        public string DocNum { get; protected set; }
+        public string DocNum { get; set; }
         [JsonPropertyName("email")]
-        public string Email { get; protected set; }
+        public string Email { get; set; }
         [JsonPropertyName("customerId")]
-        public long CustomerId { get; protected set; }
+        public long CustomerId { get; set; }
         [JsonPropertyName("givenName")]
-        public string GivenName { get; protected set; }
+        public string GivenName { get; set; }
         [JsonPropertyName("familyName1")]
-        public string FamilyName1 { get; protected set; }
+        public string FamilyName1 { get; set; }
         [JsonPropertyName("phone")]
-        public long Phone { get; protected set; }
+        public long Phone { get; set; }
 
         public Client()
         {
