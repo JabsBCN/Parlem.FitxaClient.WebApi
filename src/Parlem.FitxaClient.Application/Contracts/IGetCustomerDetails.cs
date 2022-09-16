@@ -2,8 +2,8 @@
 
 namespace Parlem.FitxaClient.Application.Contracts
 {
-    public interface IGetClientDetails
+    public interface IGetCustomerDetails
     {
-        Client GetById(long id);
+        Customer GetById(long id);
     }
 }

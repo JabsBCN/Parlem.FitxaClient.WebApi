@@ -2,7 +2,7 @@
 
 namespace Parlem.FitxaClient.Application.Models
 {
-    public class ClientDto
+    public class CustomerDto
     {
         public long Id { get; private set; }
         public string DocType { get; private set; }
@@ -13,7 +13,7 @@ namespace Parlem.FitxaClient.Application.Models
         public string FamilyName1 { get; private set; }
         public long Phone { get; private set; }
 
-        public ClientDto(long id, string docType, string docNum, string email, long customerId, string givenName, string familyName1, long phone)
+        public CustomerDto(long id, string docType, string docNum, string email, long customerId, string givenName, string familyName1, long phone)
         {
             Id = id;
             DocType = docType;

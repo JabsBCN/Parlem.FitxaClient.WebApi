@@ -2,8 +2,8 @@
 
 namespace Parlem.FitxaClient.Infrastructure.Contracts
 {
-    public interface IClientRepository
+    public interface ICustomerRepository
     {
-        Client GetClientById(long id);
+        Customer GetCustomerById(long customerId);
     }
 }

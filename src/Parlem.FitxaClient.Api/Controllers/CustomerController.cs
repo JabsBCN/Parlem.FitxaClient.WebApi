@@ -7,20 +7,20 @@ namespace Parlem.FitxaClient.Api
 
     [Route("api/[controller]")]
     [ApiController]
-    public class ClientController : ControllerBase
+    public class CustomerController : ControllerBase
     {
-        private readonly IGetClientDetails getCustomerDetails;
+        private readonly IGetCustomerDetails getCustomerDetails;
 
-        public ClientController(IGetClientDetails getClientDetails)
+        public CustomerController(IGetCustomerDetails getCustomerDetails)
         {
-            this.getCustomerDetails = getClientDetails;
+            this.getCustomerDetails = getCustomerDetails;
         }
 
         [HttpGet]
         [Route("{customerId:long}/details")]
         [ProducesResponseType((int)HttpStatusCode.OK)]
         [ProducesResponseType((int)HttpStatusCode.NotFound)]
-        public ActionResult<ClientDto> Get(long customerId)
+        public ActionResult<CustomerDto> Get(long customerId)
         {
             var customer = getCustomerDetails.GetById(customerId);
 

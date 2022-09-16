@@ -2,7 +2,7 @@
 
 namespace Parlem.FitxaClient.Domain.Models
 {
-    public class Client
+    public class Customer
     {
         [JsonPropertyName("_id")]
         public long Id { get; set; }
@@ -21,11 +21,11 @@ namespace Parlem.FitxaClient.Domain.Models
         [JsonPropertyName("phone")]
         public long Phone { get; set; }
 
-        public Client()
+        public Customer()
         {
         }
 
-        internal Client(long id, string docType, string docNum, string email, long customerId, string givenName, string familyName1, long phone)
+        internal Customer(long id, string docType, string docNum, string email, long customerId, string givenName, string familyName1, long phone)
         {
             Id = id;
             DocType = docType;
