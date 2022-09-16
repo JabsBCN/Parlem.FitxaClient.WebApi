@@ -1,0 +1,58 @@
+[
+  {
+    "_id": 1111111,
+    "productName": "FIBRA 1000 ADAMO",
+    "productTypeName": "ftth",
+    "numeracioTerminal": 933933933,
+    "soldAt": "2019-01-09 14:26:17",
+    "customerId": "11111"
+  },
+  {
+    "_id": 22222222,
+    "productName": "FIBRA 600 PARLEM",
+    "productTypeName": "ftth",
+    "numeracioTerminal": 932222222,
+    "soldAt": "2022-01-14 10:00:00",
+    "customerId": "22222"
+  },
+  {
+    "_id": 3333333,
+    "productName": "FIBRA 300 PARLEM",
+    "productTypeName": "ftth",
+    "numeracioTerminal": 93333333,
+    "soldAt": "2019-01-09 14:26:17",
+    "customerId": "33333"
+  },
+  {
+    "_id": 4444444,
+    "productName": "MOBIL 50 GB",
+    "productTypeName": "moo",
+    "numeracioTerminal": 933933933,
+    "soldAt": "2019-01-09 14:26:17",
+    "customerId": "11111"
+  },
+  {
+    "_id": 5555555,
+    "productName": "FIXE",
+    "productTypeName": "fii",
+    "numeracioTerminal": 933933933,
+    "soldAt": "2019-01-09 14:26:17",
+    "customerId": "11111"
+  },
+  {
+    "_id": 6666666,
+    "productName": "MOBIL 25 GB",
+    "productTypeName": "ftth",
+    "numeracioTerminal": 932222222,
+    "soldAt": "2019-01-09 14:26:17",
+    "customerId": "22222"
+  },
+  {
+    "_id": 7777777,
+    "productName": "MOBIL 30 GB",
+    "productTypeName": "ftth",
+    "numeracioTerminal": 93333333,
+    "soldAt": "2021-03-09 14:26:17",
+    "customerId": "33333"
+  }
+]
