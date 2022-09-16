@@ -1,9 +1,9 @@
-﻿using Parlem.FitxaClient.Domain.Models;
+﻿using Parlem.FitxaClient.Application.Models;
 
 namespace Parlem.FitxaClient.Application.Contracts
 {
     public interface IGetCustomerDetails
     {
-        Customer GetById(long id);
+        CustomerDto GetById(long id);
     }
 }
