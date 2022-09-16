@@ -10,7 +10,7 @@ namespace Parlem.FitxaClient.Infrastructure.Implementations
         {
             var clients = ReadClientsFromStorage();
 
-            return clients.First<Client>(client => client.Id == id);
+            return clients.FirstOrDefault<Client>(client => client.CustomerId == id);
 
         }
             

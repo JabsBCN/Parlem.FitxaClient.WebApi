@@ -20,7 +20,7 @@ namespace Parlem.FitxaClient.Application.Implementations
         {
             var client = this.clientRepository.GetClientById(id);
 
-            if (client == null) throw new NullReferenceException();
+            if (client == null) return null;
 
             return clientService.Create(client.Id, client.DocType, client.DocNum, client.Email, client.CustomerId, client.GivenName, client.FamilyName1, client.Phone);
         }

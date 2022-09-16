@@ -19,9 +19,16 @@ namespace Parlem.FitxaClient.Api
         [HttpGet]
         [Route("{clientId:long}/details")]
         [ProducesResponseType((int)HttpStatusCode.OK)]
+        [ProducesResponseType((int)HttpStatusCode.NotFound)]
         public ActionResult<ClientDto> Get(long clientId)
         {
-            return Ok(getClientDetails.GetById(clientId));
+            var client = getClientDetails.GetById(clientId);
+
+            if (client == null)
+            {
+                return base.NotFound();
+            }
+            return base.Ok(client);
         }
     }
 }
