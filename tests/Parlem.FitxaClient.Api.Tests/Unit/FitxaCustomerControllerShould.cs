@@ -1,10 +1,10 @@
 namespace Parlem.FitxaClient.Api.Tests.Unit
 {
     using Application.Models;
+    using AutoFixture;
     using Microsoft.AspNetCore.Mvc;
     using NSubstitute.ReturnsExtensions;
     using Parlem.FitxaClient.Application.Contracts;
-    using Parlem.FitxaClient.Domain.Models;
     using System.Net;
 
     public class FitxaCustomerControllerShould
@@ -22,7 +22,8 @@ namespace Parlem.FitxaClient.Api.Tests.Unit
         {
             //Arrange
             var fitxaClientController = new CustomerController(getCustomerDetails);
-            var customer = new Customer();
+            var fixture = new Fixture();
+            var customer = fixture.Create<CustomerDto>();
             getCustomerDetails.GetById(CUSTOMER_ID).Returns(customer);
 
             //Act
