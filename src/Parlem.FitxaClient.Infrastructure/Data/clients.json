@@ -1,0 +1,32 @@
+[
+  {
+    "_id": 555555,
+    "docType": "nif",
+    "docNum": "11223344E",
+    "email": "it@parlem.com",
+    "customerId": "11111",
+    "givenName": "Enriqueta",
+    "familyName1": "Parlem",
+    "phone": "668668668"
+  },
+  {
+    "_id": 444444,
+    "docType": "nie",
+    "docNum": "55667788M",
+    "email": "it2@parlem.com",
+    "customerId": "22222",
+    "givenName": "Lluis",
+    "familyName1": "Parlem",
+    "phone": "68458852"
+  },
+  {
+    "_id": 222222,
+    "docType": "nif",
+    "docNum": "48965874K",
+    "email": "ana@parlem.com",
+    "customerId": "22222",
+    "givenName": "Ana",
+    "familyName1": "Parlem",
+    "phone": "655878954"
+  }
+]
