@@ -6,6 +6,16 @@ Web api utilitzant Clean Arquitecture.
 ### Inteface
 S'ha implementat swagger
 La api no està autenticada. S'hauria d'implimentar la autentificasió.
+S'han creat dos controllers, separats per Client i Producte, cadascú amb una crida
+
+#### Customer
+GET
+​/api​/Customer​/{customerId}​/details
+
+### Product
+GET
+​/api​/Product​/{customerId}​/products
+
 
 ### Application
 S'han implementat casos d'ún que realitzan les crides als repositoris i fan el mapeig de les entitats de domini. Es podria implementar el patró mediator i realitzar el fluxe mitjançant comands i events.
