@@ -1,7 +1,6 @@
 ﻿using Parlem.FitxaClient.Domain.Models;
 using Parlem.FitxaClient.Infrastructure.Contracts;
-using System.Text.Json;
-using System.Text.Json.Serialization;
+using Newtonsoft.Json;
 
 namespace Parlem.FitxaClient.Infrastructure.Implementations
 {
@@ -17,11 +16,11 @@ namespace Parlem.FitxaClient.Infrastructure.Implementations
             
         private IEnumerable<Client> ReadClientsFromStorage()
         {
-            var clientsFileContent = File.ReadAllText("../Parlem.FitxaClient.Infrastructure/Data/clients.json");
+            var clientsJsonContent = File.ReadAllText("../Parlem.FitxaClient.Infrastructure/Data/clients.json");
 
-            if (string.IsNullOrEmpty(clientsFileContent)) return new List<Client>();
+            if (string.IsNullOrEmpty(clientsJsonContent)) return new List<Client>();
 
-            return JsonSerializer.Deserialize<Client[]>(clientsFileContent);
+            return JsonConvert.DeserializeObject<List<Client>>(clientsJsonContent);
 
         }
     }
