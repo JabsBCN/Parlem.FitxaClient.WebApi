@@ -1,5 +1,6 @@
 using Parlem.FitxaClient.Application.Contracts;
 using Parlem.FitxaClient.Application.Implementations;
+using Parlem.FitxaClient.Application.Mappers;
 using Parlem.FitxaClient.Domain.Services;
 using Parlem.FitxaClient.Infrastructure.Contracts;
 using Parlem.FitxaClient.Infrastructure.Implementations;
@@ -11,6 +12,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<IGetCustomerDetails, GetCustomerDetails>();
+builder.Services.AddScoped<ICustomerMapper, CustomerMapper>();
 builder.Services.AddScoped<ICustomerService, CustomerService>();
 builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
 
