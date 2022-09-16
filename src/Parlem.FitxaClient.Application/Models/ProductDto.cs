@@ -7,9 +7,9 @@
         public string ProductTypeName { get; private set; }
         public long NumeracioTerminal { get; private set; }
         public DateTime SoldAt { get; private set; }
-        public string CustomerId { get; private set; }
+        public long CustomerId { get; private set; }
 
-        public ProductDto(long id, string productName, string productTypeName, long numeracioTerminal, DateTime soldAt, string customerId)
+        public ProductDto(long id, string productName, string productTypeName, long numeracioTerminal, DateTime soldAt, long customerId)
         {
             Id = id;
             ProductName = productName;
